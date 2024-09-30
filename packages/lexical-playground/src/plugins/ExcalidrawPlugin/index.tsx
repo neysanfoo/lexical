@@ -84,11 +84,7 @@ export default function ExcalidrawPlugin(): JSX.Element | null {
   return isModalOpen ? (
     <ExcalidrawModal
       initialElements={[]}
-      initialAppState={{
-        isLoading: false,
-        theme: 'light',
-        viewBackgroundColor: '#FFFFFF',
-      }}
+      initialAppState={{} as AppState}
       initialFiles={{}}
       isShown={isModalOpen}
       onDelete={onDelete}
